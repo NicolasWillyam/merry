@@ -1,32 +1,76 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import HeadTitle from "./head-title";
+import { Menu } from "lucide-react";
+
+interface MenuItem {
+  label: string;
+  id: string;
+}
+
+const MenuProps: MenuItem[] = [
+  { label: "Giới thiệu", id: "#about" },
+  { label: "Sứ mệnh & Tầm nhìn", id: "#missions" },
+  { label: "Khóa học", id: "#courses" },
+  { label: "Giảng viên", id: "#teachers" },
+  { label: "Feedback", id: "#feedbacks" },
+];
 
 function Navbar() {
+  const [state, setState] = useState<boolean>(false);
+
+  const handleClick = () => {
+    if (state == false) {
+      setState(true);
+    } else {
+      setState(false);
+    }
+  };
+
   return (
-    <div className="max-w-7xl mx-auto flex justify-between items-center mt-5 px-5">
-      <Image src={"/logo.svg"} alt="logo" width={90} height={30} />
-      <ul className="font-regular text-[#666666] text-sm gap-8 hidden sm:flex">
-        <li className="cursor-pointer text-[#001064]">Home</li>
-        <li className="cursor-pointer hover:underline underline-offset-4 hover:text-[#001064]">
-          Giới thiệu
-        </li>
-        <li className="cursor-pointer hover:underline underline-offset-4 hover:text-[#001064]">
-          Sứ mệnh & Tầm nhìn
-        </li>
-        <li className="cursor-pointer hover:underline underline-offset-4 hover:text-[#001064]">
-          Khóa học
-        </li>
-        <li className="cursor-pointer hover:underline underline-offset-4 hover:text-[#001064]">
-          Giảng viên
-        </li>
-        <li className="cursor-pointer hover:underline underline-offset-4 hover:text-[#001064]">
-          Thành tích
-        </li>
-      </ul>
-      <Button variant="default" size="default">
-        Sign Up
-      </Button>
+    <div className="w-full fixed top-0 z-10">
+      <div className="block bg-white ">
+        <HeadTitle />
+        <div className="max-w-7xl mx-auto flex justify-between items-center py-3 px-5 shadow-sm">
+          <Link href={"/"}>
+            <Image src={"/logo.svg"} alt="logo" width={120} height={36} />
+          </Link>
+          <ul className="font-regular text-[#666666] text-[15px] gap-8 hidden sm:flex">
+            {MenuProps.map((i) => (
+              <Link key={i.id} href={i.id}>
+                <li className="cursor-pointer hover:text-[#001064]">
+                  {i.label}
+                </li>
+              </Link>
+            ))}
+            ;
+          </ul>
+          <div className="flex items-center gap-4">
+            <Button variant="default" size="default">
+              Sign Up
+            </Button>
+            <Menu className="sm:hidden" onClick={handleClick} />
+          </div>
+        </div>
+      </div>
+
+      <div
+        style={{ display: state ? "block" : "none" }}
+        className="pt-4 pb-8 shadow-md rounded-b-3xl  bg-white border-t-[1px] sm:hidden"
+      >
+        <ul className="font-regular text-[#666666] text-base gap-8 pl-6">
+          {MenuProps.map((i) => (
+            <Link key={i.id} href={i.id} onClick={handleClick}>
+              <li className="cursor-pointer hover:text-[#001064] py-3">
+                {i.label}
+              </li>
+            </Link>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

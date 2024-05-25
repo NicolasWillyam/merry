@@ -23,8 +23,8 @@ const StoryCard: React.FC<StoryProps> = (prop) => {
             className="rounded-full"
           />
           <div className="">
-            <p className="font-medium text-lg">Vallentina Putri</p>
-            <p className="text-[#666666]">Giảng viên trung tâm</p>
+            <p className="font-medium text-lg">{prop.first_title}</p>
+            <p className="text-[#666666]">{prop.second_title}</p>
           </div>
         </div>
         <p className="text-regular text-[15px] text-[#313131] mt-8">

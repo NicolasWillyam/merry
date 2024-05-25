@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'UTM-Aptima';
+    src: url('/fonts/UTM-Aptima.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+.text {
+    font-family: 'UTM-Aptima', sans-serif;
+  }

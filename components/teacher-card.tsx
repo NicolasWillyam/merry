@@ -23,7 +23,7 @@ const TeacherCard: React.FC<TeacherProps> = (prop) => {
         </p>
       </div>
       <Image
-        className="ml-auto"
+        className="ml-auto rounded-3xl"
         src={prop.imageURL}
         alt="image"
         width={360}

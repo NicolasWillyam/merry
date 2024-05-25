@@ -26,11 +26,11 @@ const ContentCard: React.FC<ContentProps> = (prop) => {
             {prop.content}
           </p>
           <Link href={"https://web.facebook.com/profile.php?id=61559203776992"}>
-            <Button className="mt-8">Register Now</Button>
+            <Button className="mt-8">Đăng Kí Ngay</Button>
           </Link>
         </div>
         <Image
-          className="ml-auto"
+          className="mx-auto sm:mr-0.5 rounded-3xl"
           src={prop.imageURL}
           alt="image"
           width={360}
@@ -42,7 +42,7 @@ const ContentCard: React.FC<ContentProps> = (prop) => {
     return (
       <div className="w-full grid sm:grid-cols-2 items-center gap-8 sm:gap-0">
         <Image
-          className="mx-auto sm:mr-auto"
+          className="mx-auto sm:ml-0.5 rounded-3xl"
           src={prop.imageURL}
           alt="image"
           width={360}
@@ -59,7 +59,7 @@ const ContentCard: React.FC<ContentProps> = (prop) => {
             {prop.content}
           </p>
           <Link href={"https://web.facebook.com/profile.php?id=61559203776992"}>
-            <Button className="mt-8">Register Now</Button>
+            <Button className="mt-8">Đăng Kí Ngay</Button>
           </Link>
         </div>
       </div>

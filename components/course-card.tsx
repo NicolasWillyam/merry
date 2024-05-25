@@ -30,19 +30,10 @@ const CourseCard: React.FC<CourseProps> = (prop) => {
         </p>
 
         <div className="w-fit flex items-center mt-16 gap-8">
-          <Button variant="default" size="default">
-            Register Now
-          </Button>
           <Link href={"https://web.facebook.com/profile.php?id=61559203776992"}>
-            <div className="flex gap-2 items-center">
-              <Image
-                src={"/play-icon.svg"}
-                alt="play-icon"
-                width={38}
-                height={38}
-              />
-              <p className="font-medium">Watch Videos</p>
-            </div>
+            <Button variant="default" size="default">
+              Đăng Kí Ngay
+            </Button>
           </Link>
         </div>
       </div>
