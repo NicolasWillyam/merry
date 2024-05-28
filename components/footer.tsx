@@ -3,7 +3,7 @@ import React from "react";
 
 function footer() {
   return (
-    <div className="max-w-6xl sm:flex justify-between mx-auto my-16 sm:my-32 px-4 sm:px-0">
+    <div className="max-w-6xl sm:flex justify-between mx-auto mt-16 sm:mt-32 px-4 sm:px-0">
       <div className="block max-w-[340px]">
         <Image alt="image" src={"/logo.svg"} width={120} height={40} />
         <p className="text-sm text-[#313131] mt-4">

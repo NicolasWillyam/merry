@@ -46,9 +46,6 @@ const ContentCard: React.FC<ContentProps> = (prop) => {
           height={360}
         />
         <div className="w-fit block">
-          <p className="uppercase font-semibold text-[#FF6099]">
-            {prop.first_title}
-          </p>
           <p className="text-3xl font-semibold mt-4 mb-8">
             {prop.second_title}
           </p>

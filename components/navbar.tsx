@@ -49,7 +49,11 @@ function Navbar() {
             ;
           </ul>
           <div className="flex items-center gap-4">
-            <Button variant="default" size="default">
+            <Button
+              variant="default"
+              size="default"
+              className="hidden sm:block"
+            >
               Sign Up
             </Button>
             <Menu className="sm:hidden" onClick={handleClick} />

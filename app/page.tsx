@@ -20,6 +20,8 @@ import teacher1 from "../public/teacher1.jpg";
 import teacher2 from "../public/teacher2.jpg";
 import student1 from "../public/student1.png";
 import student2 from "../public/student2.png";
+import signed from "../public/signed.png";
+import homebg from "../public/homebg.png";
 import {
   Carousel,
   CarouselContent,
@@ -34,12 +36,14 @@ import FeedbackCard from "@/components/feedback-card";
 import { Input } from "@/components/ui/input";
 import Footer from "@/components/footer";
 
+import { Check } from "lucide-react";
+
 function Home() {
   return (
     <div>
       <Navbar />
       <main>
-        <section id="home">
+        {/* <section id="home">
           <div className="max-w-5xl mx-auto pt-40 text-center sm:pb-20 px-4 sm:px-0">
             <p className="sm:leading-[72px] text-4xl sm:text-5xl font-semibold">
               Where happiness meet high scores
@@ -82,11 +86,76 @@ function Home() {
               />
             </div>
           </div>
-        </section>
+        </section> */}
+        <section id="home">
+          <div className="w-full h-[80vh] sm:h-[70vh] mt-32 bg-gradient-to-b from-white to-[#E54981]/80">
+            <div className="max-w-5xl mx-auto text-left sm:pb-20 px-4 sm:px-0 sm:flex ">
+              <div className="w-full h-[40vh] sm:h-auto sm:w-3/5 sm:-mr-20 pt-10">
+                <p className="sm:leading-[64px] text-4xl sm:text-5xl font-semibold">
+                  Where{" "}
+                  <span className="text-[#E54981] uppercase font-bold">
+                    happiness
+                  </span>{" "}
+                  meet{" "}
+                  <span className="text-[#E54981] uppercase font-bold">
+                    high scores
+                  </span>
+                </p>
 
+                <ul className="font-semibold my-8 sm:text-lg uppercase grid grid-cols-1 gap-2">
+                  <li className="flex items-center">
+                    <div className="w-6 h-6 rounded-full bg-[#E54981] mr-3 text-white flex items-center justify-center">
+                      <Check size={16} />
+                    </div>
+                    <p>Lộ trình học cá nhân hoá</p>
+                  </li>
+
+                  <li className="flex items-center">
+                    <div className="w-6 h-6 rounded-full bg-[#E54981] mr-3 text-white flex items-center justify-center">
+                      <Check size={16} />
+                    </div>
+                    <p>Phương pháp học phù hợp, thú vị</p>
+                  </li>
+
+                  <li className="flex items-center">
+                    <div className="w-6 h-6 rounded-full bg-[#E54981] mr-3 text-white flex items-center justify-center">
+                      <Check size={16} />
+                    </div>
+                    <p>Học bổ trợ miễn phí bất kể thời gian</p>
+                  </li>
+                </ul>
+
+                <div className="w-fit flex items-center mt-8 gap-8 cursor-pointer bg-[#E54981]/80 p-2 pr-8 rounded-full">
+                  <Link href={"https://youtu.be/CKuKRRFoVOg"}>
+                    <div className="flex gap-2 items-center">
+                      <Image
+                        src={"/play-icon.svg"}
+                        alt="play-icon"
+                        width={38}
+                        height={38}
+                      />
+                      <p className="ml-1 text-white font-medium">
+                        Xem video để hiểu thêm về chúng tôi
+                      </p>
+                    </div>
+                  </Link>
+                </div>
+              </div>
+              <div className="relative sm:w-4/5 sm:-ml-10 sm:-mr-20 sm:h-[70vh]  h-[40vh]">
+                <Image
+                  src={homebg.src}
+                  alt="image"
+                  width={700}
+                  height={700}
+                  className="absolute bottom-0 w-[95vw] sm:w-full"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
         <section id="about">
           <div className="max-w-5xl mx-auto pt-40 px-8 sm:px-0">
-            <p className="text-3xl font-semibold text-center">
+            <p className="text-5xl font-semibold text-center">
               Trải nghiệm <span className="text-[#E54981]">Ưu Việt </span>
               dành cho người học
             </p>
@@ -95,37 +164,82 @@ function Home() {
                 id={"1"}
                 first_title="Cam kết với học viên"
                 second_title="Cam kết đầu ra - Cam kết khoá học "
-                content="MERRY cam kết giúp học viên đạt chuẩn đầu ra bằng văn bản trước khi bát đầu khoá học.Theo đó, học viên cần cam kết tham gia đủ số buổi theo ộ trình và học tập theo hướng dẫn của giáo viên đảm nhiệm để đảm bảo quá trình học thực sự đem lại hiệu quả cho học viên."
+                content="Tin vào năng lực và sự tận tâm của trung tâm, MERRY cam kết, cùng với sự nỗ lực và chăm chỉ của học viên, bạn sẽ đạt được kết quả mình mong muốn trong thời gian tối ưu nhất."
                 imageURL={home1.src}
               />
               <ContentCard
                 id={"0"}
                 first_title="Không giới Hạn"
                 second_title="Học bổ trợ miễn phí, không giới hạn"
-                content="Học viên sẽ thực hiện kiểm tra đầu vào về năng lực sử dụng Tiêngs Anh, mục tiêu học tập và phong cách học tập giúp người học định hình rõ ràng hơn và có tâm thế sẵn sàng nhất trước khi bắt đầu hành trình đạt chuẩn đầu ra."
+                content="Đội ngũ giáo viên, trợ giảng luôn sẵn sàng giúp đỡ và giải đáp mọi thắc mắc của học viên. Đối với MERRY, sự cố gắng của bạn là vô giá, chúng tôi trân trọng 
+                nỗ lực ấy và sẽ dành mọi điều tốt nhất cho bạn."
                 imageURL={about2.src}
               />
               <ContentCard
                 id={"1"}
                 first_title="Không giới  hạn"
                 second_title="Phương pháp học tập khoa học và thú vị "
-                content="Chương trình đào tạo được xây dựng dựa trên nền tảng hình thành thói quen tự học trong não bộ. Các phương pháp giảng dạy trong từng buổi học nhằm khơi dậy động lực ở học viên và toạ nhiều cơ hội để các em đạt được nhữn mục tiêu ngắn hạn trong khoá học."
+                content="Chúng mình luôn tìm tòi và học hỏi những phương pháp phù hợp hơn với từng cá nhân, từng hoàn cảnh nhằm rút ngắn thời gian tuy nhiên vẫn giữ vững được hiệu quả của những buổi học. Ở MERRY, bạn chỉ cần chăm chỉ, còn lại chúng tôi sẽ giải quyết."
                 imageURL={about3.src}
-              />
-              <ContentCard
-                id={"0"}
-                first_title="đội nghũ giảng dạy"
-                second_title="Đội ngũ Giáo Viên yêu giảng dạy và truyền lửa đến Học Viên"
-                content="Giáo Viên đạt chứng chỉ IELTS 8.0 và bằng cấp Nghiệp vụ Sư phạm, đều có trên 2 năm kinh nghiệm đào tạo Tiếng Anh"
-                imageURL={card_image.src}
               />
             </div>
           </div>
-        </section>
+        </section>{" "}
+        <section id="teachers">
+          <div className="max-w-5xl mx-auto pt-40 px-4 sm:px-0">
+            <p className="text-3xl font-semibold mb-16 text-center sm:text-left">
+              Đội ngũ giảng viên của chúng tôi
+            </p>
+            <Carousel>
+              <CarouselContent>
+                <CarouselItem>
+                  <TeacherCard
+                    id={"1"}
+                    first_title="ĐỘI NGŨ GIẢNG VIÊN"
+                    second_title="Nguyễn Thanh Thảo - 8.0 IELTS"
+                    content="Nguyễn Thanh Thảo là một giáo viên luôn tâm huyết với nghề, trong suốt những năm giảng dạy, Phương Anh đã giúp rất nhiều bạn trẻ đạt được số điểm mong muốn của mình đồng thời tìm ra những phương pháp học mới có hiệu quả và phù hợp với từng học viên."
+                    imageURL={teacher1.src}
+                  />
+                </CarouselItem>
 
+                <CarouselItem>
+                  <TeacherCard
+                    id={"1"}
+                    first_title="ĐỘI NGŨ GIẢNG VIÊN"
+                    second_title="Hồng Duyên - 8.0 IELTS"
+                    content="Hồng Duyên là một một giáo viên luôn lắng nghe và cố gắng đáp ứng mọi nhu cầu học tập của học viên. 100% học viên để lại feedback tích cực sau những khoá học với giáo viên."
+                    imageURL={teacher1.src}
+                  />
+                </CarouselItem>
+
+                <CarouselItem>
+                  <TeacherCard
+                    id={"1"}
+                    first_title="ĐỘI NGŨ GIẢNG VIÊN"
+                    second_title="Trịnh Hải Đức - 8.0 IELTS"
+                    content="Với tính cách dễ mến, thầy HẢI ĐỨC luôn chiếm trọn điểm 10 thiện cảm trong mắt mọi học viên. Trải qua những lớp học của thầy, điều khiến các bạn ấn tượng nhất luôn là sự tận tâm và nhiệt huyết trong mỗi buổi học."
+                    imageURL={teacher1.src}
+                  />
+                </CarouselItem>
+
+                <CarouselItem>
+                  <TeacherCard
+                    id={"1"}
+                    first_title="ĐỘI NGŨ GIẢNG VIÊN"
+                    second_title="Bạch Quang Hưng - 8.0 IELTS"
+                    content="Một thầy giáo Gen Z và những giờ học đầy ắp tiếng cười, thầy Hưng luôn cố gắng tạo không khí vui vẻ trong lớp học. Vì giờ học luôn có không khí thoải mái nên các học viên rất dễ tiếp thu kiến thức. Đây là một trong những lý do học viên của thầy luôn đạt điểm cao trong các kì thi IELTS, TOEIC."
+                    imageURL={teacher1.src}
+                  />
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+          </div>
+        </section>
         <section id="courses">
           <div className="max-w-5xl mx-auto pt-40 px-4 sm:px-0">
-            <p className="text-2xl sm:text-3xl font-semibold text-center mb-16">
+            <p className="text-5xl sm:text-3xl font-semibold text-center mb-16">
               Các
               <span className="text-[#E54981]"> Khóa Học </span>
               dành cho bạn
@@ -137,12 +251,7 @@ function Home() {
                     id={"1"}
                     first_title="IELTS 0 - 6.5+"
                     second_title="IELTS 0 - 6.5+"
-                    content="Giúp người học xây dựng tư duy đúng về việc học và xây dựng thói quen
-                  học tập tốt để họ có thể áp dụng vào tất cả lĩnh vực trong cuộc sống
-                  thông qua trải nghiệm học Tiếng Anh
-                  
-                  Xây dựng cộng đồng những nhà giáo dục toàn diện, là gia đình của mỗi
-                  cá thể cùng nhau phát triển trở thành phiên bản tốt nhất của mình."
+                    content="Với lộ trình học được cá nhân hoá, MERRY vẽ ra con đường ngắn và thuận lợi nhất cho từng học viên để đến với mục tiêu của mình. Chúng tôi cam kết sẽ ngày một hoàn thiện và đưa ra nhiều hơn những phương pháp mang IELTS đến gần hơn với mỗi cá nhân, lấy chất lượng khoá học làm kim chỉ nam cho mỗi bước đi, quyết định."
                     imageURL={course1.src}
                   />
                 </CarouselItem>
@@ -152,12 +261,8 @@ function Home() {
                     id={"1"}
                     first_title="TOEIC 0 - 800"
                     second_title="TOEIC 0 - 800"
-                    content="Giúp người học xây dựng tư duy đúng về việc học và xây dựng thói quen
-                  học tập tốt để họ có thể áp dụng vào tất cả lĩnh vực trong cuộc sống
-                  thông qua trải nghiệm học Tiếng Anh
-                  
-                  Xây dựng cộng đồng những nhà giáo dục toàn diện, là gia đình của mỗi
-                  cá thể cùng nhau phát triển trở thành phiên bản tốt nhất của mình."
+                    content="Học gì thi nấy, chúng tôi không đơn thuần chỉ đưa cho bạn những kĩ năng và kiến thức làm bài, MERRY là người trò chuyện để hiểu bạn hơn mỗi ngày, từ đó đưa ra thời gian biểu, cách thức học phù hợp. TOEIC không còn là nỗi lo lắng của những người đang ngày đêm ôn luyện mong muốn cải thiện ngoại ngữ của mình.
+                    "
                     imageURL={course2.src}
                   />
                 </CarouselItem>
@@ -167,12 +272,7 @@ function Home() {
                     id={"1"}
                     first_title="KID ENGLISH"
                     second_title="KID ENGLISH"
-                    content="Giúp người học xây dựng tư duy đúng về việc học và xây dựng thói quen
-                  học tập tốt để họ có thể áp dụng vào tất cả lĩnh vực trong cuộc sống
-                  thông qua trải nghiệm học Tiếng Anh
-                  
-                  Xây dựng cộng đồng những nhà giáo dục toàn diện, là gia đình của mỗi
-                  cá thể cùng nhau phát triển trở thành phiên bản tốt nhất của mình."
+                    content="Nắm bắt được tâm lý các bạn nhỏ, MERRY đã đưa ra rất nhiều những hoạt động, trò chơi thú vị để khiến giờ học trở thành khoảng thời gian thoải mái và lý tưởng để tiếp thu kiến thức."
                     imageURL={course3.src}
                   />
                 </CarouselItem>
@@ -182,13 +282,16 @@ function Home() {
             </Carousel>
           </div>
         </section>
-
         <section id="missions">
           <div className="w-full bg-[#181B3E] mt-40 pt-10">
             <div className="max-w-6xl mx-auto py-24 px-8 sm:px-0">
               <p className="w-4/5 mx-auto text-white font-medium text-xl sm:text-3xl text-center">
-                Cùng MERRY kiến tạo tương lai Giáo dục Việt Nam rộng mở vì sự
-                phát triển toàn diện của con người
+                Cùng{" "}
+                <span className="text-[#E54981] font-bold text-[36px] leading-none">
+                  MERRY
+                </span>{" "}
+                kiến tạo tương lai Giáo dục Việt Nam rộng mở vì sự phát triển
+                toàn diện của con người
               </p>
               <div className="mt-16 grid sm:grid-cols-3 gap-8 sm:gap-5">
                 <div className="p-4 pb-6 bg-white rounded-2xl">
@@ -291,40 +394,6 @@ function Home() {
             </div>
           </div>
         </section>
-
-        <section id="teachers">
-          <div className="max-w-5xl mx-auto pt-40 px-4 sm:px-0">
-            <p className="text-3xl font-semibold mb-16 text-center sm:text-left">
-              Đội ngũ giảng viên của chúng tôi
-            </p>
-            <Carousel>
-              <CarouselContent>
-                <CarouselItem>
-                  <TeacherCard
-                    id={"1"}
-                    first_title="ĐỘI NGŨ GIẢNG VIÊN"
-                    second_title="Giảng viên Diệu Anh - 7.5 IELTS"
-                    content="Giáo viên Diệu Anh là một giảng viên tận tâm và giàu kinh nghiệm với bằng điểm IELTS ấn tượng 7.5. Với kiến thức sâu rộng về tiếng Anh và kinh nghiệm giảng dạy lâu năm, Diệu Anh không chỉ giúp học viên hiểu biết vững chắc về ngôn ngữ mà còn truyền cảm hứng và động viên họ vượt qua mọi thử thách trong việc học tập và rèn luyện kỹ năng IELTS. Bằng sự nhiệt huyết và sự cam kết của mình, Diệu Anh đem lại một môi trường học tập tích cực và động viên cho tất cả các học viên của mình."
-                    imageURL={teacher1.src}
-                  />
-                </CarouselItem>
-
-                <CarouselItem>
-                  <TeacherCard
-                    id={"1"}
-                    first_title="IELTS 0 -6.5+"
-                    second_title="Giảng viên Hồng Duyên - 7.5 IELTS"
-                    content="Giáo viên Hồng Duyên, với điểm IELTS ấn tượng là 7.5, không chỉ là một giảng viên có kiến thức sâu rộng về tiếng Anh mà còn là một người hướng dẫn tận tâm và đầy nhiệt huyết.Với nhiều năm kinh nghiệm trong việc giảng dạy ELTS, Duyên đã giúp nhiều học viên của mình đạt được kết quả cao trong kỳ thi"
-                    imageURL={teacher2.src}
-                  />
-                </CarouselItem>
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
-          </div>
-        </section>
-
         <section id="story">
           <div className="max-w-5xl mx-auto pt-40 px-4 sm:px-0">
             <p className="text-3xl font-semibold mb-16 text-center sm:text-left">
@@ -377,129 +446,21 @@ function Home() {
             </div>
           </div>
         </section>
-
-        <section id="feedbacks">
-          <div className="max-w-5xl mx-auto pt-40 px-8 sm:px-0">
-            <p className="text-3xl font-semibold mb-16 text-center sm:text-left">
-              Học viên nói gì về các khóa học của chúng tôi
-            </p>
-            <div className="sm:flex gap-5">
-              <div className="flex-cols sm:w-1/3">
-                <FeedbackCard
-                  name="Vallentina Putri"
-                  role="Giảng viên trung tâm"
-                  content="Em thấy học từ động lực và mục tiêu là chân lý, và mình cần phải đóng vai trò là một người truyền động lực cho học viên
-
-                  Xây dựng cộng đồng những nhà giáo dục toàn diện, là gia đình của mỗi
-                  cá thể cùng nhau pháttriển trở thành phiên bản tốt nhất của mình."
-                  imageURL={card_image.src}
-                  time="26 March 2024"
-                />
-                <FeedbackCard
-                  name="Vallentina Putri"
-                  role="Giảng viên trung tâm"
-                  content="
-
-                  Xây dựng cộng đồng những nhà giáo dục toàn diện, là gia đình của mỗi
-                  cá thể cùng nhau pháttriển trở thành phiên bản tốt nhất của mình."
-                  imageURL={card_image.src}
-                  time="26 March 2024"
-                />
-                <FeedbackCard
-                  name="Vallentina Putri"
-                  role="Giảng viên trung tâm"
-                  content="Em thấy học từ động lực và mục tiêu là chân lý, và mình cần phải đóng vai trò là một người truyền động lực cho học viên
-
-                  "
-                  imageURL={card_image.src}
-                  time="26 March 2024"
-                />
-              </div>
-              <div className="flex-cols w-1/3 hidden sm:block">
-                <FeedbackCard
-                  name="Vallentina Putri"
-                  role="Giảng viên trung tâm"
-                  content="Em thấy học từ động lực và mục tiêu là chân lý, và mình cần phải đóng vai trò là một người truyền động lực cho học viên
-
-                  Xây dựng cộng đồng những nhà giáo dục toàn diện, là gia đình của mỗi
-                  cá thể cùng nhau pháttriển trở thành phiên bản tốt nhất của mình."
-                  imageURL={card_image.src}
-                  time="26 March 2024"
-                />
-
-                <FeedbackCard
-                  name="Vallentina Putri"
-                  role="Giảng viên trung tâm"
-                  content="Goood
-
-                  "
-                  imageURL={card_image.src}
-                  time="26 March 2024"
-                />
-                <FeedbackCard
-                  name="Vallentina Putri"
-                  role="Giảng viên trung tâm"
-                  content="
-
-                  Xây dựng cộng đồng những nhà giáo dục toàn diện, là gia đình của mỗi
-                  cá thể cùng nhau pháttriển trở thành phiên bản tốt nhất của mình."
-                  imageURL={card_image.src}
-                  time="26 March 2024"
-                />
-              </div>
-              <div className="flex-cols w-1/3 hidden sm:block">
-                <FeedbackCard
-                  name="Vallentina Putri"
-                  role="Giảng viên trung tâm"
-                  content="Em thấy học từ động lực và mục tiêu là chân lý, và mình cần phải đóng vai trò là một người truyền động lực cho học viên
-
-                  Xây dựng cộng đồng những nhà giáo dục toàn diện, là gia đình của mỗi
-                  cá thể cùng nhau pháttriển trở thành phiên bản tốt nhất của mình."
-                  imageURL={card_image.src}
-                  time="26 March 2024"
-                />
-                <FeedbackCard
-                  name="Vallentina Putri"
-                  role="Giảng viên trung tâm"
-                  content="Em thấy học từ động lực và mục tiêu là chân lý, và mình cần phải đóng vai trò là một người truyền động lực cho học viên
-
-                  "
-                  imageURL={card_image.src}
-                  time="26 March 2024"
-                />
-                <FeedbackCard
-                  name="Vallentina Putri"
-                  role="Giảng viên trung tâm"
-                  content="
-
-                  Xây dựng cộng đồng những nhà giáo dục toàn diện, là gia đình của mỗi
-                  cá thể cùng nhau pháttriển trở thành phiên bản tốt nhất của mình."
-                  imageURL={card_image.src}
-                  time="26 March 2024"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section id="email">
           <div className="max-w-6xl mx-auto my-32  bg-[#181B3E] p-16 text-center sm:rounded-3xl">
             <div className="sm:w-1/2 mx-auto">
               <p className="text-2xl sm:text-4xl font-semibold text-white">
-                Enter your email to get the latest news
+                Đăng kí để nhận thông tin mới nhất từ
+                <span className="text-[#E54981]"> MERRY</span>
               </p>
               <p className=" my-4 sm:my-8 text-sm text-white">
-                You will get the latest notifications about the lastest news
+                Bạn sẽ nhận được thông tin mới nhất từ Merry
               </p>
 
               <div className="p-1 flex bg-white  w-full rounded-full">
-                <Input
-                  type="email"
-                  id="email"
-                  placeholder="Enter your email address"
-                />
+                <Input type="email" id="email" placeholder="Nhập Email" />
                 <Button variant="default" size="default">
-                  Send
+                  Gửi
                 </Button>
               </div>
             </div>
@@ -508,6 +469,15 @@ function Home() {
       </main>
 
       <Footer />
+      <div className="max-w-6xl mx-auto sm:mb-16">
+        <Image
+          src={signed.src}
+          alt="image"
+          height={30}
+          width={200}
+          className="ml-auto mr-4 my-8 sm:mr-0 sm:my-0"
+        />
+      </div>
       <div className="w-full text-sm text-center bg-[#D9D9D9]/40 h-10 flex items-center justify-center">
         Coppy Right 2024, All Rights Reserved
       </div>

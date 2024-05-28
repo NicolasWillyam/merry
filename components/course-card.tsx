@@ -21,9 +21,9 @@ const CourseCard: React.FC<CourseProps> = (prop) => {
         height={420}
       />
       <div className="w-fit block">
-        <p className="uppercase font-semibold text-[#FF6099]">
+        {/* <p className="uppercase font-semibold text-[#FF6099]">
           {prop.first_title}
-        </p>
+        </p> */}
         <p className="text-3xl font-semibold mt-4 mb-8">{prop.second_title}</p>
         <p className="text-regular text-[15px] text-[#666666]">
           {prop.content}
