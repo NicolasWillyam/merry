@@ -16,9 +16,6 @@ const ContentCard: React.FC<ContentProps> = (prop) => {
     return (
       <div className="w-full grid sm:grid-cols-2 items-center gap-8 sm:gap-0">
         <div className="w-fit block">
-          <p className="uppercase font-semibold text-[#FF6099]">
-            {prop.first_title}
-          </p>
           <p className="text-3xl font-semibold mt-4 mb-8">
             {prop.second_title}
           </p>
