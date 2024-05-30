@@ -16,8 +16,11 @@ import course3 from "../public/course3.png";
 import mission1 from "../public/mission1.png";
 import mission2 from "../public/mission2.png";
 import mission3 from "../public/mission3.png";
+import teacher from "../public/teacher.png";
 import teacher1 from "../public/teacher1.jpg";
 import teacher2 from "../public/teacher2.jpg";
+import teacher3 from "../public/teacher3.png";
+import teacher4 from "../public/teacher4.png";
 import student1 from "../public/student1.png";
 import student2 from "../public/student2.png";
 import signed from "../public/signed.png";
@@ -198,7 +201,7 @@ function Home() {
                     first_title="ĐỘI NGŨ GIẢNG VIÊN"
                     second_title="Nguyễn Thanh Thảo - 8.0 IELTS"
                     content="Nguyễn Thanh Thảo là một giáo viên luôn tâm huyết với nghề, trong suốt những năm giảng dạy, Phương Anh đã giúp rất nhiều bạn trẻ đạt được số điểm mong muốn của mình đồng thời tìm ra những phương pháp học mới có hiệu quả và phù hợp với từng học viên."
-                    imageURL={teacher1.src}
+                    imageURL={teacher4.src}
                   />
                 </CarouselItem>
 
@@ -208,7 +211,7 @@ function Home() {
                     first_title="ĐỘI NGŨ GIẢNG VIÊN"
                     second_title="Hồng Duyên - 8.0 IELTS"
                     content="Hồng Duyên là một một giáo viên luôn lắng nghe và cố gắng đáp ứng mọi nhu cầu học tập của học viên. 100% học viên để lại feedback tích cực sau những khoá học với giáo viên."
-                    imageURL={teacher1.src}
+                    imageURL={teacher2.src}
                   />
                 </CarouselItem>
 
@@ -218,7 +221,7 @@ function Home() {
                     first_title="ĐỘI NGŨ GIẢNG VIÊN"
                     second_title="Trịnh Hải Đức - 8.0 IELTS"
                     content="Với tính cách dễ mến, thầy HẢI ĐỨC luôn chiếm trọn điểm 10 thiện cảm trong mắt mọi học viên. Trải qua những lớp học của thầy, điều khiến các bạn ấn tượng nhất luôn là sự tận tâm và nhiệt huyết trong mỗi buổi học."
-                    imageURL={teacher1.src}
+                    imageURL={teacher.src}
                   />
                 </CarouselItem>
 
@@ -228,7 +231,7 @@ function Home() {
                     first_title="ĐỘI NGŨ GIẢNG VIÊN"
                     second_title="Bạch Quang Hưng - 8.0 IELTS"
                     content="Một thầy giáo Gen Z và những giờ học đầy ắp tiếng cười, thầy Hưng luôn cố gắng tạo không khí vui vẻ trong lớp học. Vì giờ học luôn có không khí thoải mái nên các học viên rất dễ tiếp thu kiến thức. Đây là một trong những lý do học viên của thầy luôn đạt điểm cao trong các kì thi IELTS, TOEIC."
-                    imageURL={teacher1.src}
+                    imageURL={teacher3.src}
                   />
                 </CarouselItem>
               </CarouselContent>
@@ -408,10 +411,7 @@ function Home() {
                         id={"1"}
                         first_title="Học viên Thuỳ Dung"
                         second_title="6.5 IELTS"
-                        content="Em thấy học từ động lực và mục tiêu là chân lý, và mình cần phải đóng vai trò là một người truyền động lực cho học viên
-
-                  Xây dựng cộng đồng những nhà giáo dục toàn diện, là gia đình của mỗi
-                  cá thể cùng nhau pháttriển trở thành phiên bản tốt nhất của mình."
+                        content="Em cảm thấy W với S đều rất oke rồi ạ, có mấy hôm thôi nhưng em cũng rút ra được cách làm đề cho mình rồi ạ."
                         imageURL={student1.src}
                       />
                     </CarouselItem>
@@ -421,8 +421,7 @@ function Home() {
                         id={"1"}
                         first_title="Học viên Lê Thương"
                         second_title="6.5 IELTS"
-                        content="Giúp người học xây dựng tư duy đúng về việc học và xây dựng thói quen học tập tốt để họ có thể áp dụng vào tất cả lĩnh vực trong cuộc sống
-                    thông qua trải nghiệm học Tiếng Anh."
+                        content="Em được thầy cô dạy kĩ nên khá tự tin đi thi rui, Merry chờ tin vui của em nhé ạ."
                         imageURL={student2.src}
                       />
                     </CarouselItem>
