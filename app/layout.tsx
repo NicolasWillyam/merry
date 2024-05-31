@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Merry - Where happiness meet high scores",
   description: "Where happiness meet high scores",
   icons: {
-    icon: "/log.svg",
+    icon: "/logo.ico",
     // shortcut: "/shortcut-icon.png",
     // apple: "/apple-icon.png",
     // other: {

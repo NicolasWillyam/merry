@@ -200,7 +200,7 @@ function Home() {
                     id={"1"}
                     first_title="ĐỘI NGŨ GIẢNG VIÊN"
                     second_title="Nguyễn Thanh Thảo - 8.0 IELTS"
-                    content="Nguyễn Thanh Thảo là một giáo viên luôn tâm huyết với nghề, trong suốt những năm giảng dạy, Phương Anh đã giúp rất nhiều bạn trẻ đạt được số điểm mong muốn của mình đồng thời tìm ra những phương pháp học mới có hiệu quả và phù hợp với từng học viên."
+                    content="Nguyễn Thanh Thảo là một giáo viên luôn tâm huyết với nghề, trong suốt những năm giảng dạy, Thanh Thảo đã giúp rất nhiều bạn trẻ đạt được số điểm mong muốn của mình đồng thời tìm ra những phương pháp học mới có hiệu quả và phù hợp với từng học viên."
                     imageURL={teacher4.src}
                   />
                 </CarouselItem>
@@ -220,7 +220,7 @@ function Home() {
                     id={"1"}
                     first_title="ĐỘI NGŨ GIẢNG VIÊN"
                     second_title="Trịnh Hải Đức - 8.0 IELTS"
-                    content="Với tính cách dễ mến, thầy HẢI ĐỨC luôn chiếm trọn điểm 10 thiện cảm trong mắt mọi học viên. Trải qua những lớp học của thầy, điều khiến các bạn ấn tượng nhất luôn là sự tận tâm và nhiệt huyết trong mỗi buổi học."
+                    content="Với tính cách dễ mến, thầy Hải Đức luôn chiếm trọn điểm 10 thiện cảm trong mắt mọi học viên. Trải qua những lớp học của thầy, điều khiến các bạn ấn tượng nhất luôn là sự tận tâm và nhiệt huyết trong mỗi buổi học."
                     imageURL={teacher.src}
                   />
                 </CarouselItem>
@@ -319,12 +319,12 @@ function Home() {
                       Tự động hoá vận hành và chăm sóc khách hàng
                     </p>
                     <p className="text-[#666666] tracking-[-4%] text-sm mt-2">
-                      Merry tự hào áp dụng công nghệ tự động hóa trong vận hành
+                      MERRY tự hào áp dụng công nghệ tự động hóa trong vận hành
                       và chăm sóc khách hàng. Hệ thống quản lý thông minh của
                       chúng tôi giúp ghi danh, xếp lớp và theo dõi tiến trình
                       học tập nhanh chóng, chính xác. Với dịch vụ hỗ trợ tự động
                       24/7, học viên luôn nhận được sự tư vấn và giải đáp kịp
-                      thời. Merry cam kết mang đến trải nghiệm học tập hiện đại,
+                      thời. MERRY cam kết mang đến trải nghiệm học tập hiện đại,
                       thân thiện và hiệu quả.
                     </p>
                   </div>
@@ -352,12 +352,12 @@ function Home() {
                       Lớp học trực tuyến ONLINE
                     </p>
                     <p className="text-[#666666] tracking-[-4%] mt-6 text-sm">
-                      Merry tự hào mang đến các lớp học trực tuyến hiện đại và
+                      MERRY tự hào mang đến các lớp học trực tuyến hiện đại và
                       tiện lợi. Với công nghệ tiên tiến, học viên có thể học mọi
                       lúc, mọi nơi, cùng hệ thống quản lý thông minh giúp theo
                       dõi tiến trình học tập. Đội ngũ giảng viên giàu kinh
                       nghiệm và công cụ học tập tương tác đảm bảo nâng cao kỹ
-                      năng tiếng Anh hiệu quả. Merry cam kết mang đến trải
+                      năng tiếng Anh hiệu quả. MERRY cam kết mang đến trải
                       nghiệm học tập trực tuyến chất lượng.
                     </p>
                   </div>
@@ -385,10 +385,10 @@ function Home() {
                       Chú trọng vào phát triển trí tuệ con người
                     </p>
                     <p className="text-[#666666] tracking-[-4%] text-sm mt-2">
-                      Merry chú trọng phát triển trí tuệ con người, không chỉ
+                      MERRY chú trọng phát triển trí tuệ con người, không chỉ
                       dạy ngôn ngữ mà còn rèn luyện tư duy phản biện, kỹ năng
                       giao tiếp và sáng tạo. Với đội ngũ giáo viên tận tâm và
-                      phương pháp tiên tiến, Merry cam kết mang đến môi trường
+                      phương pháp tiên tiến, MERRY cam kết mang đến môi trường
                       học tập toàn diện, thúc đẩy sự phát triển của học viên.
                     </p>
                   </div>
@@ -421,7 +421,7 @@ function Home() {
                         id={"1"}
                         first_title="Học viên Lê Thương"
                         second_title="6.5 IELTS"
-                        content="Em được thầy cô dạy kĩ nên khá tự tin đi thi rui, Merry chờ tin vui của em nhé ạ."
+                        content="Em được thầy cô dạy kĩ nên khá tự tin đi thi rui, MERRY chờ tin vui của em nhé ạ."
                         imageURL={student2.src}
                       />
                     </CarouselItem>
@@ -453,7 +453,7 @@ function Home() {
                 <span className="text-[#E54981]"> MERRY</span>
               </p>
               <p className=" my-4 sm:my-8 text-sm text-white">
-                Bạn sẽ nhận được thông tin mới nhất từ Merry
+                Bạn sẽ nhận được thông tin mới nhất từ MERRY
               </p>
 
               <div className="p-1 flex bg-white  w-full rounded-full">
