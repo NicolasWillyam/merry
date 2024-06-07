@@ -40,6 +40,7 @@ import { Input } from "@/components/ui/input";
 import Footer from "@/components/footer";
 
 import { Check } from "lucide-react";
+import EmailResponse from "@/components/email-response";
 
 function Home() {
   return (
@@ -456,12 +457,7 @@ function Home() {
                 Bạn sẽ nhận được thông tin mới nhất từ MERRY
               </p>
 
-              <div className="p-1 flex bg-white  w-full rounded-full">
-                <Input type="email" id="email" placeholder="Nhập Email" />
-                <Button variant="default" size="default">
-                  Gửi
-                </Button>
-              </div>
+              <EmailResponse />
             </div>
           </div>
         </section>
