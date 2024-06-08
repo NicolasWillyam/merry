@@ -446,21 +446,7 @@ function Home() {
             </div>
           </div>
         </section>
-        <section id="email">
-          <div className="max-w-6xl mx-auto my-32  bg-[#181B3E] p-16 text-center sm:rounded-3xl">
-            <div className="sm:w-1/2 mx-auto">
-              <p className="text-2xl sm:text-4xl font-semibold text-white">
-                Đăng kí để nhận thông tin mới nhất từ
-                <span className="text-[#E54981]"> MERRY</span>
-              </p>
-              <p className=" my-4 sm:my-8 text-sm text-white">
-                Bạn sẽ nhận được thông tin mới nhất từ MERRY
-              </p>
-
-              <EmailResponse />
-            </div>
-          </div>
-        </section>
+        <EmailResponse />
       </main>
 
       <Footer />

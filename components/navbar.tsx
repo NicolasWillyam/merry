@@ -16,7 +16,7 @@ const MenuProps: MenuItem[] = [
   { label: "Sứ mệnh & Tầm nhìn", id: "#missions" },
   { label: "Khóa học", id: "#courses" },
   { label: "Giảng viên", id: "#teachers" },
-  { label: "Feedback", id: "#feedbacks" },
+  { label: "Feedback", id: "#story" },
 ];
 
 function Navbar() {
@@ -46,16 +46,19 @@ function Navbar() {
                 </li>
               </Link>
             ))}
-            ;
           </ul>
           <div className="flex items-center gap-4">
-            <Button
-              variant="default"
-              size="default"
-              className="hidden sm:block"
+            <Link
+              href={"https://web.facebook.com/profile.php?id=61559203776992"}
             >
-              Sign Up
-            </Button>
+              <Button
+                variant="default"
+                size="default"
+                className="hidden sm:block"
+              >
+                Sign Up
+              </Button>
+            </Link>
             <Menu className="sm:hidden" onClick={handleClick} />
           </div>
         </div>
