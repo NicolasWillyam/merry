@@ -460,7 +460,7 @@ function Home() {
         />
       </div>
       <div className="w-full text-sm text-center bg-[#D9D9D9]/40 h-10 flex items-center justify-center">
-        Coppy Right 2024, All Rights Reserved
+        Copyright 2024, All Rights Reserved
       </div>
     </div>
   );
